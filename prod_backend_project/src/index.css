@@ -1,0 +1,44 @@
+html,
+body,
+#root {
+  --app-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --app-font-size: 14px;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  background: #f7f8fc;
+  font-family: var(--app-font-family);
+  font-size: var(--app-font-size);
+}
+
+body {
+  display: block;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.app-shell,
+.auth-page,
+.dashboard-page,
+.appointments-page,
+.courses-page,
+.page-container,
+.student-registration-page,
+[class*='modal'],
+[class*='popup'] {
+  font-family: var(--app-font-family);
+  font-size: var(--app-font-size);
+}
+
