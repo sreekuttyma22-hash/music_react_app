@@ -6,11 +6,11 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://sreekuttyma22.pythonanywhere.com',
+        target: 'https://music-backend-app-4cv8.onrender.com',
         changeOrigin: true,
       },
       '/media': {
-        target: 'https://sreekuttyma22.pythonanywhere.com',
+        target: 'https://music-backend-app-4cv8.onrender.com',
         changeOrigin: true,
       },
     },
