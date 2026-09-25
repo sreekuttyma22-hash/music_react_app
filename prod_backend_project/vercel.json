@@ -1,6 +1,10 @@
 {
   "rewrites": [
     {
+      "source": "/api/analytics/dashboard/",
+      "destination": "https://music-backend-app-4cv8.onrender.com/api/analytics/dashboard/"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://music-backend-app-4cv8.onrender.com/api/:path*"
     }
