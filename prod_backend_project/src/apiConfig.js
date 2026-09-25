@@ -1,3 +1,5 @@
+// Always use the production backend directly. Do not allow a frontend deployment
+// URL from VITE_API_BASE_URL to redirect API calls back to Vercel.
 const API_BASE_URL = 'https://music-backend-app-4cv8.onrender.com';
 
 const API_CONFIG = {
