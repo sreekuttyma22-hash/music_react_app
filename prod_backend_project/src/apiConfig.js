@@ -18,7 +18,7 @@ const API_CONFIG = {
     CATEGORIES: '/api/categories/',
     ROOMS: '/api/rooms/',
     APPOINTMENTS: '/api/appointments/',
-    DASHBOARD: '/api/dashboard/',
+    DASHBOARD: '/api/analytics/dashboard/',
     STAFF_LOGIN: '/api/staff/login/',
     STAFF_REGISTER: '/api/staff/create/',
     STAFF_LOGOUT: '/api/staff/logout/',

@@ -15,9 +15,10 @@ import {
 } from "recharts";
 
 import "./Dashboard.css";
-import { authenticatedFetch } from "../apiClient";
+import API_CONFIG from "../apiConfig";
+import { apiRequest } from "../apiClient";
 
-const API_URL = "/api/analytics/dashboard/";
+const API_URL = API_CONFIG.ENDPOINTS.DASHBOARD;
 
 const COLORS = [
   "#2563eb",
@@ -172,27 +173,9 @@ export default function Dashboard() {
       setLoading(true);
       setError("");
 
-      const response = await authenticatedFetch(API_URL, {
+      const data = await apiRequest(API_URL, {
         method: "GET",
-
-        credentials: "include",
-
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-        },
       });
-
-
-      if (!response.ok) {
-        throw new Error(
-          `Dashboard API returned ${response.status}`
-        );
-      }
-
-
-      const data = await response.json();
-
 
       if (!data.success) {
         throw new Error(
