@@ -4,7 +4,7 @@ import { authenticatedFetch } from '../apiClient';
 import API_CONFIG from '../apiConfig';
 import ConfirmDialog from '../component/ConfirmDialog';
 
-const API_URL = 'http://127.0.0.1:8000/api/instructors/';
+const API_URL = 'https://sreekuttyma22.pythonanywhere.com/api/instructors/';
 const CATEGORIES_API_URL = `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.CATEGORIES}`;
 
 /* =========================================================
@@ -263,7 +263,7 @@ const getImageUrl = (image) => {
     return image;
   }
 
-  return `http://127.0.0.1:8000${image}`;
+  return `https://sreekuttyma22.pythonanywhere.com${image}`;
 };
 
 /* =========================================================
