@@ -4,7 +4,7 @@ import { authenticatedFetch } from '../apiClient';
 import API_CONFIG from '../apiConfig';
 import ConfirmDialog from '../component/ConfirmDialog';
 
-const API_URL = 'http://127.0.0.1:8000/api/instructors/' || 'https://music-backend-app-4cv8.onrender.com/api/instructors/';
+const API_URL = 'https://music-backend-app-4cv8.onrender.com/api/instructors/';
 const CATEGORIES_API_URL = `${API_CONFIG.BASE_URL}${API_CONFIG.ENDPOINTS.CATEGORIES}`;
 
 /* =========================================================
