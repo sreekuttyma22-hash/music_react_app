@@ -1,11 +1,4 @@
-const DEFAULT_API_BASE_URL = 'https://music-backend-app-4cv8.onrender.com';
-const configuredApiBaseUrl = String(import.meta.env.VITE_API_BASE_URL || '').trim();
-
-// Only accept an absolute backend URL. A relative value such as "/api" would
-// make the browser send requests to the Vercel frontend instead of Render.
-const API_BASE_URL = /^https?:\/\//i.test(configuredApiBaseUrl)
-  ? configuredApiBaseUrl.replace(/\/+$/, '')
-  : DEFAULT_API_BASE_URL;
+const API_BASE_URL = 'https://music-backend-app-4cv8.onrender.com';
 
 const API_CONFIG = {
   BASE_URL: API_BASE_URL,
